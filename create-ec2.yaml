@@ -7,7 +7,7 @@
   vars:
     aws_access_key: YOUR_ACCESS_KEY
     aws_secret_key: YOUR_SECRET_KEY
-    aws_region: us-east-1
+    aws_region: ap-south-1
 
   tasks:
     - name: Launch Ubuntu t3.micro
