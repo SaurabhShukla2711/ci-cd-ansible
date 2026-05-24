@@ -21,7 +21,7 @@ jobs:
 
       - name: Run Ansible Playbook
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AKIAVDCYPYILO7AS43OG }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.24f2rlT2TNbEl7TwMcDjRsB2jdmhtzrORrFyGFtS }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           ansible-playbook -i inventory.ini create_ec2.yaml
